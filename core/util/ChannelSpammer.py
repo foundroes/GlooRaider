@@ -73,7 +73,7 @@ def nomention():
                 response = requests.post(url, data=data, headers=header, json=data)
                 time_rn = get_time_rn()
                 counter.value += 1
-                if response.status_code == 201 or response.status_code == 204 or response.status_code == 200:
+                if response.status_code in [200, 201, 204]:
                     success +=1
                     print(f"                      {o}[{m}{time_rn}{o}] {lg}[{g}SUCCESS{lg}] {o}| {w}{token[:37]} {o}[{m}{response.status_code}{o}]")
                 else:
