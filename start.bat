@@ -1,0 +1,2 @@
+python gloo.py
+pause

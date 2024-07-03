@@ -1,0 +1,10 @@
+discord
+httpx
+pytz
+dhooks
+pystyle
+colorama
+requests
+bs4
+websocket-client
+easygui
