@@ -15,7 +15,7 @@ def biochanger():
         else:
             bio = bio
 
-        output_lock = threading.Lock()
+        lock = threading.Lock()
 
         def bio_changer(token):
             global success, failure
@@ -40,26 +40,24 @@ def biochanger():
             }
 
             response = session.patch(f"https://discord.com/api/v9/users/@me/profile", headers=headers, json=payload)
-            with output_lock:
+            
+            with lock:
                 time_rn = get_time_rn()
-                if response.status_code == 202 or response.status_code == 200:
+                if response.status_code in [200, 202]:
                     success +=1
                     print(f"                      {o}[{m}{time_rn}{o}] {lg}[{g}SUCCESS{lg}] {s}| {w}{token[:37]} {o}[{m}{response.status_code}{o}]")
                 else:
                     failure +=1
                     print(f"                      {o}[{m}{time_rn}{o}] {lr}[{r}FAILURE{lr}] {s}| {w}{token[:37]} {o}[{m}{response.status_code}{o}]")
 
-        def start():
-            with open("Assets/Input/Tokens.txt", "r", encoding='utf-8') as f:
-                tokens = f.read().splitlines()
+        with open("Assets/Input/Tokens.txt", "r", encoding='utf-8') as f:
+            tokens = f.read().splitlines()
 
-            num_threads = get_num_threads() 
+        num_threads = get_num_threads() 
 
-            with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
-                executor.map(bio_changer, tokens)
-        
-        start()
-
+        with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
+            executor.map(bio_changer, tokens)
+    
         clpr()
 
         print(f'                              {o}[{w}Type {o}"{m}show{o}"{w} for info or press {o}"{m}enter{o}"{w} to go back{o}]\n')
