@@ -20,6 +20,6 @@
     <br/>
 </p>
 <p align="center">
-  <a href="https://github.com/VatosV2/Nexus-MultiTool">
+  <a href="https://github.com/foundroes/GlooRaider">
     <img src="https://cdn.discordapp.com/attachments/1245112135659421857/1258101990152601681/image.png?ex=6686d248&is=668580c8&hm=1b79a4911e62f5b9a40f17b2aa840c481b7a66896b1ecfe586da59c22407fc54&" alt="Logo" width="879" height="353">
   </a>
