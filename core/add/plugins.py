@@ -222,7 +222,8 @@ mainprint = f"""{free}[OPEN SOURCE - FREE VERSION]
 {cs[2]}                                     / __ `/ / __ \/ __ \      / / __ \/ / 
 {cs[3]}                                    / /_/ / / /_/ / /_/ / __  / / /_/ / /  
 {cs[4]}                                    \__, /_/\____/\____/ /_/ /_/\____/_/   
-{cs[5]}                                   /____/"""
+{cs[5]}                                   /____/
+"""
 
 
 mainpage = f"""       {o}[{m}01{o}] {s}> {w}Token Formater  {o}[{m}06{o}] {s}> {w}Token Dupe. Remover   {o}[{m}11{o}] {s}> {w}Webhook Spammer  {o}[{m}16{o}] {s}> {w}Sound Spammer
