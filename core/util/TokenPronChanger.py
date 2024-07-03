@@ -16,7 +16,6 @@ def pronounceChanger():
     else:
         pronouns = pronouns
 
-    output_lock = threading.Lock()
     def pronoun_changer(token):
         global success, failure
         payload = {
@@ -48,20 +47,14 @@ def pronounceChanger():
             failure +=1
             print(f"                      {o}[{m}{time_rn}{o}] {lr}[{r}FAILURE{lr}] {s}|{w} {token[:37]} {o}[{m}{response.status_code}{o}]")
 
+    with open("Assets/Input/Tokens.txt", "r", encoding='utf-8') as f:
+        tokens = f.read().splitlines()
 
-    def process_token(token):
-        pronoun_changer(token)
+    num_threads = get_num_threads()  # Getting number of threads from config.ini
 
-    def main():
-        with open("Assets/Input/Tokens.txt", "r", encoding='utf-8') as f:
-            tokens = f.read().splitlines()
-
-        num_threads = get_num_threads()  # Getting number of threads from config.ini
-
-        with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
-            executor.map(process_token, tokens)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
+        executor.map(pronoun_changer, tokens)
     
-    main() 
     clpr()
 
     print(f'                              {o}[{w}Type {o}"{m}show{o}"{w} for info or press {o}"{m}enter{o}"{w} to go back{o}]\n')
