@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/VatosV2/Nexus-MultiTool">
+  <a href="https://github.com/foundroes/GlooRaider">
     <img src="https://media.discordapp.net/attachments/1245112135659421857/1245119499355820082/Untitled-1.png?ex=668664a5&is=66851325&hm=d84686c883e452c13b4cda6c3e572cb9f0d558b663f66d4046facf6bc2bc5bda&=&format=webp&quality=lossless" alt="Logo" width="100" height="100">
   </a>
 
@@ -9,9 +9,9 @@
     Gloo is a discord multitool with 40 Paid/Free options.
     <br/>
     <br/>
-    <a href="https://discord.gg/nexustools">Discord</a>
-    <a href="https://discord.gg/nexustools">Youtube</a>
-    <a href="https://discord.gg/nexustools">Store</a>
+    <a href="https://discord.gg/uJE9rfJ7Tz">Discord</a>
+    <a href="https://www.youtube.com/channel/UCNrJOMG81sdmjUSHpDC41-w">Youtube</a>
+    <a href="https://lostroes.sell.app">Store</a>
   </p>
 </p>
 
