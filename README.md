@@ -16,8 +16,9 @@
 </p>
 
   <p align="center">
-    You can check out premium version in our discord server
+    You can check out premium version in our discord server.
     <br/>
+    Star the repo for rewards and more updates, send us in the server.
 </p>
 <p align="center">
   <a href="https://github.com/foundroes/GlooRaider">
