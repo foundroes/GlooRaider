@@ -19,6 +19,7 @@
     You can check out premium version in our discord server.
     <br/>
     🌟 Star the repo for rewards and more updates, send us in the server.
+    <br/>
     ❌ 25 stars: Adding Token Joiner
 </p>
 <p align="center">
