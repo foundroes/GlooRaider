@@ -18,7 +18,8 @@
   <p align="center">
     You can check out premium version in our discord server.
     <br/>
-    Star the repo for rewards and more updates, send us in the server.
+    🌟 Star the repo for rewards and more updates, send us in the server.
+    ❌ 25 stars: Adding Token Joiner
 </p>
 <p align="center">
   <a href="https://github.com/foundroes/GlooRaider">
