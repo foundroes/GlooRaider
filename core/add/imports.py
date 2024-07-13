@@ -13,3 +13,5 @@ from core.util.AuditSpammer                      import *
 from core.util.SoundSpammer                      import *
 from core.util.ChannelSpammer                    import *
 from core.util.BasicSpammer                      import *
+
+from core.util.HookTools                      import *

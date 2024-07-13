@@ -20,7 +20,7 @@ def removeduplicates():
         open(output_file_path, 'a').write('')
 
     if user_input.lower() in yeslist:
-        clpr()
+        clearprint()
         path = input_file_path
         with open(path, "r", encoding="utf-8") as input_file:
             for each_line in input_file:
@@ -31,7 +31,7 @@ def removeduplicates():
                         lines_seen.add(cleaned_line)
 
     elif user_input.lower() in nolist:
-        clpr()
+        clearprint()
         path = easygui.fileopenbox(default='*.txt', filetypes=['*.txt'], title='GLOO - Select your tokens file.', multiple=False)
         with open(path, "r", encoding="utf-8") as input_file:
             for each_line in input_file:

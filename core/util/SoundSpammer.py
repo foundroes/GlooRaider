@@ -8,13 +8,13 @@ import time
 import random
 
 def soundboard():
-    clpr()
+    clearprint()
     titles(title16)
 
     server_id = input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}SERVER ID{o}] {s}>{w} ")
     channel_id = input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}CHANNEL ID{o}] {s}>{w} ")
     amount = int(input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}AMOUNT{o}] {s}>{w} "))
-    clpr()
+    clearprint()
 
     output_lock = threading.Lock()
     defean_voice = False
@@ -92,7 +92,7 @@ def soundboard():
                 "accept-language": "en-GB",
                 "content-length": str(len(dumps(payload))),
                 "content-type": "application/json",
-                "cookie": f"__cfuid={randstr(43)}; __dcfduid={randstr(32)}; locale=en-US",
+                "cookie": f"__cfuid={getting.randstr(43)}; __dcfduid={getting.randstr(32)}; locale=en-US",
                 "origin": "https://discord.com",
                 "sec-fetch-dest": "empty",
                 "sec-fetch-mode": "cors",
@@ -105,7 +105,7 @@ def soundboard():
             response = session.post(f"https://discord.com/api/v9/channels/{channel_id}/voice-channel-effects", headers=headers, json=payload)
             if response.status_code == 204:
                 with output_lock:
-                    time_rn = get_time_rn()
+                    time_rn = getting.get_time_rn()
                     print(f"                      {o}[{m}{time_rn}{o}] {lb}[{b}PLAYING{lb}] {o}| {w}{token[:37]} {o}[{m}{response.status_code}{o}]")
             else: 
                 print(f"                      {o}[{m}{time_rn}{o}] {lr}[{r}FAILURE{lr}] {o}| {w}{token[:37]} {o}[{m}{response.status_code}{o}]")
@@ -116,16 +116,16 @@ def soundboard():
     def process_token(token, amount):
         voice_joiner(token, amount)
 
-    clpr()
+    clearprint()
     with open("Assets/Input/Tokens.txt", "r", encoding='utf-8') as f:
         tokens = f.read().splitlines()
         for token in tokens:
             with output_lock:
-                time_rn = get_time_rn()
+                time_rn = getting.get_time_rn()
                 print(f"                      {o}[{m}{time_rn}{o}] {lg}[{g}SUCCESS{lg}] {o}| {w}{token[:37]} {o}[{m}+++{o}]")
                 pass
     # Reading number of threads from config.ini
-    num_threads = get_num_threads()
+    num_threads = getting.get_num_threads()
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
         for token in tokens:

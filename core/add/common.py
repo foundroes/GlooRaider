@@ -4,7 +4,7 @@ from core.add.plugins import *
 System.Size(110, 20)
 
 def common():
-    print(mainprint)
+    print(toolprint)
     print(f"""
                                    {o}[{w}Welcome to Free version of Gloo raider{o}]
                                    

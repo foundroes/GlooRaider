@@ -13,7 +13,7 @@ from core.add.plugins import *
 
 
 def check_token(token, valid_tokens, locked_tokens, invalid_tokens, lock):
-    time_rn = get_time_rn()
+    time_rn = getting.get_time_rn()
     try:
         response = requests.get('https://discord.com/api/v9/users/@me/library', headers={"authorization": token,"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36","x-discord-locale": "de-DE"})
         if response.status_code == 200:
@@ -42,9 +42,9 @@ def tokenchecker():
     locked_tokens = []
     lock = threading.Lock()
     
-    num_threads = get_num_threads()
+    num_threads = getting.get_num_threads()
     
-    clpr()
+    clearprint()
 
     path = "Assets/Input/Tokens.txt" 
     with open(path, "r") as f:
@@ -69,22 +69,22 @@ def tokenchecker():
         for token in valid_tokens:
             f.write(token + "\n")
 
-    clpr()
+    clearprint()
     print(f"""                       {o}[{w}Type {o}"{m}show{o}"{w} for info or {o}"{m}check{o}"{w} to save valid token profile data{o}]\n""")
     choose = input(f"                        {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} ")
 
 
     if choose == "show":
-        clpr()
+        clearprint()
         print(f"""                           {lg}[{g}VALID{lg}]   {s}| {o}[{m}{len(valid_tokens):03}{o}] {s}> {w}Token is valid and sorted in valid.txt.
-                           {ly}[{y}LOCKED{ly}]  {s}| {o}[{m}{len(locked_tokens):03}{o}] {s}> {w}Token is email{o}/{w}phone locked.
+                           {ly}[{y}LOCKED{ly}]  {s}| {o}[{m}{len(locked_tokens):03}{o}] {s}> {w}Token is email/phone locked.
                            {lr}[{r}INVALID{lr}] {s}| {o}[{m}{len(invalid_tokens):03}{o}] {s}> {w}Token is invalid.
 """)
         input(f"                           {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} Press Enter to go back. ")   
 
 
     elif choose == "check": 
-        clpr()
+        clearprint()
         print(f"                             {o}[{m}GLOO{o}] {s}| {o}[{m}INFO{o}] {w}This is a premium version feature!")
         sleep(1)
         print(f"                             {o}[{m}GLOO{o}] {s}| {o}[{m}INFO{o}] {w}Going back to the main menu...")

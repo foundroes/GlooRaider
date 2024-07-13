@@ -13,8 +13,8 @@ def namechanger():
     
     def changenick(server, nickname, token):
         global success, failure
-        time_rn = get_time_rn()
-        headers = get_headers(token)
+        time_rn = getting.get_time_rn()
+        headers = getting.get_headers(token)
         response = requests.patch(f"https://discord.com/api/v9/guilds/{server}/members/@me/nick", headers=headers, json={"nick": nickname})
         if response.status_code == 200:
             success +=1
@@ -24,15 +24,15 @@ def namechanger():
             print(f"                      {o}[{m}{time_rn}{o}] {lr}[{r}FAILURE{lr}] {s}|{w} {token[:37]} {o}[{m}{response.status_code}{o}]")
 
     
-    tokens = get_tokens()
+    tokens = getting.get_tokens()
     server = input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}GUILD ID{o}] {s}>{w} ")
     nick = input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}USERNAME{o}] {s}>{w} ")
     clear()
-    print(mainprint)
+    print(toolprint)
     print("")
 
     # Getting number of threads from config.ini
-    num_threads = get_num_threads()
+    num_threads = getting.get_num_threads()
     
     path = "Assets/Input/Tokens.txt" 
     with open(path, "r") as f:
@@ -53,13 +53,13 @@ def namechanger():
     for t in threads:
         t.join()
     
-    clpr()
+    clearprint()
 
     print(f'                              {o}[{w}Type {o}"{m}show{o}"{w} for info or press {o}"{m}enter{o}"{w} to go back{o}]\n')
     choose = input(f"                               {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} ")
 
     if choose == "show":
-        clpr()
+        clearprint()
         print(f"""                       {lg}[{g}SUCCESS{lg}] {s}| {o}[{m}{success:03}{o}] {s}>{w} Changed the name of the token in the server!
                        {lr}[{r}FAILURE{lr}] {s}| {o}[{m}{failure:03}{o}] {s}>{w} Failed to change the name of the token!""")
         input(f"\n                       {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} Press Enter to go back.")

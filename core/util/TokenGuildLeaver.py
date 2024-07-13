@@ -4,13 +4,13 @@ from core.add.plugins import *
 
 def leaver():
     titles(title4)
-    clpr()
+    clearprint()
     ID = input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}GUILD ID{o}] {s}>{w} ")
-    clpr()
+    clearprint()
 
     apilink = "https://discord.com/api/v9/users/@me/guilds/" + str(ID)
 
-    token = get_tokens()
+    token = getting.get_tokens()
     threads = []
 
     with open('Assets/Input/Tokens.txt', 'r') as handle:
@@ -20,7 +20,7 @@ def leaver():
             headers = {
                 'Authorization': token,
                 "content-length": "0",
-                "cookie": f"__cfuid={randstr(43)}; __dcfduid={randstr(32)}; locale=en-US",
+                "cookie": f"__cfuid={getting.randstr(43)}; __dcfduid={getting.randstr(32)}; locale=en-US",
                 "origin": "https://discord.com",
                 "sec-fetch-dest": "empty",
                 "sec-fetch-mode": "cors",
@@ -30,10 +30,10 @@ def leaver():
                 "x-debug-options": "bugReporterEnabled",
                 "x-super-properties": "eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRGlzY29yZCBDbGllbnQiLCJyZWxlYXNlX2NoYW5uZWwiOiJjYW5hcnkiLCJjbGllbnRfdmVyc2lvbiI6IjEuMC42MDAiLCJvc192ZXJzaW9uIjoiMTAuMC4yMjAwMCIsIm9zX2FyY2giOiJ4NjQiLCJzeXN0ZW1fbG9jYWxlIjoic2siLCJjbGllbnRfYnVpbGRfbnVtYmVyIjo5NTM1MywiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0="
             }
-            time_rn = get_time_rn()
+            time_rn = getting.get_time_rn()
             print(f"                      {o}[{m}{time_rn}{o}] {lg}[{g}SUCCESS{lg}] {s}|{w} {token[:37]} {o}[{m}+++{o}]")
 
-            num_threads = get_num_threads()
+            num_threads = getting.get_num_threads()
 
             t = threading.Thread(target=requests.delete, args=(apilink,), kwargs={'headers': headers})
             threads.append(t)
@@ -46,6 +46,6 @@ def leaver():
 
     for t in threads:
         t.join()
-    clpr()
+    clearprint()
     print(f'                             {o}[{w}Tokens left the server, try again if some did not{o}]')
     input(f"\n                              {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} Press Enter to go back.{Fore.BLACK}")

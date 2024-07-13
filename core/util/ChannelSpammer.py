@@ -26,13 +26,22 @@ def channelspammer():
     
     elif whichone == "2":
         nomention()
+        clearprint()
+            
+        print(f'                              {o}[{w}Type {o}"{m}show{o}"{w} for info or press {o}"{m}enter{o}"{w} to go back{o}]\n')
+        choose = input(f"                               {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} ")
+
+        if choose == "show":
+            clearprint()
+            print(f"""                            {lg}[{g}SUCCESS{lg}] {s}| {o}[{m}{success:04}{o}] {s}>{w} Sent the messages to the channel.
+                {lr}[{r}FAILURE{lr}] {s}| {o}[{m}{failure:04}{o}] {s}>{w} Failed to send the messages.""")                 
+            input(f"                            {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} Press Enter to go back.")
 
     elif whichone == "3":
         premium()
 
-
 def premium():
-    clpr()
+    clearprint()
     print(f"                                   {o}[{m}GLOO{o}] {s}|{w} {o}[{m}INFO{o}] {s}>{w} This is a premium feature! ")
     sleep(1)
     print(f"                                   {o}[{m}GLOO{o}] {s}|{w} {o}[{m}INFO{o}] {s}>{w} Continuing with a free plan...")
@@ -44,7 +53,7 @@ def nomention():
     failure = 0
     deleted = 0
     fdelete = 0
-    clpr()
+    clearprint()
 
     with open('Assets/Input/Tokens.txt') as f:
         tokens = f.read().splitlines()
@@ -54,7 +63,7 @@ def nomention():
     print(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}CHANNEL ID{o}] {s}>{w} ", end = ""); CHANNEL_ID = input()
     print(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}MESSAGE{o}] {s}>{w} ", end = ""); MESSAGE = input()
 
-    clpr()
+    clearprint()
     url = f'https://discord.com/api/v9/channels/{CHANNEL_ID}/messages'
 
     messages = [MESSAGE, MESSAGE]
@@ -71,7 +80,7 @@ def nomention():
 
             while counter.value < MSG_AMOUNT:
                 response = requests.post(url, data=data, headers=header, json=data)
-                time_rn = get_time_rn()
+                time_rn = getting.get_time_rn()
                 counter.value += 1
                 if response.status_code in [200, 201, 204]: # for vatos
                     success +=1
@@ -86,7 +95,7 @@ def nomention():
                 if counter.value >= MSG_AMOUNT:
                     pass
 
-    num_threads = get_num_threads()  
+    num_threads = getting.get_num_threads()  
     counter = Value('i', 0)  
 
     threads = []

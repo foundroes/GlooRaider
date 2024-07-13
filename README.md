@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/foundroes/GlooRaider">
-    <img src="https://media.discordapp.net/attachments/1245112135659421857/1245119499099963504/smaller.png?ex=669393a5&is=66924225&hm=2febe59f29bfaaa1b65bc61416275cb90de6fc60d565e85594a29e00471c4966&=&format=webp&quality=lossless" alt="Logo" width="100" height="100">
+    <img src="https://media.discordapp.net/attachments/1245112135659421857/1245119499355820082/Untitled-1.png?ex=668664a5&is=66851325&hm=d84686c883e452c13b4cda6c3e572cb9f0d558b663f66d4046facf6bc2bc5bda&=&format=webp&quality=lossless" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Gloo Raider | Open-Source | Free Version</h3>
@@ -24,5 +24,5 @@
 </p>
 <p align="center">
   <a href="https://github.com/foundroes/GlooRaider">
-    <img src="https://media.discordapp.net/attachments/1245112135659421857/1245112250872758334/pfbanner.png?ex=66938ce5&is=66923b65&hm=f30faeb600b2f6cc4e19410e567117d4cf26db43a34fa20cd3f81b5816f076ae&=&format=webp&quality=lossless&width=550&height=220" alt="Logo" width="879" height="353">
+    <img src="https://cdn.discordapp.com/attachments/1245112135659421857/1258101990152601681/image.png?ex=6686d248&is=668580c8&hm=1b79a4911e62f5b9a40f17b2aa840c481b7a66896b1ecfe586da59c22407fc54&" alt="Logo" width="879" height="353">
   </a>

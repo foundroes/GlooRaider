@@ -3,9 +3,11 @@
 from core.add.plugins import *
 
 
-def TokenInfo(token):
+def TokenInfo():
+
+    token = input(f"\n                                   {o}[{m}GLOO{o}] {s}| {o}[{m}TOKEN{o}] {s}> [INPUT HIDDEN]{Fore.BLACK}")
     titles(title5)
-    r = requests.get('https://discord.com/api/v9/users/@me', headers=get_headers(token))
+    r = requests.get('https://discord.com/api/v9/users/@me', headers=getting.get_headers(token))
 
     userName = r.json()['username'] + '#' + r.json()['discriminator']
     userID = r.json()['id']
@@ -13,7 +15,7 @@ def TokenInfo(token):
     email = r.json()['email']
     mfa = r.json()['mfa_enabled']
     has_nitro = False
-    res = requests.get('https://discordapp.com/api/v9/users/@me/billing/subscriptions', headers=get_headers(token))
+    res = requests.get('https://discordapp.com/api/v9/users/@me/billing/subscriptions', headers=getting.get_headers(token))
     nitro_data = res.json()
     has_nitro = bool(len(nitro_data) > 0)
 
@@ -33,7 +35,7 @@ def TokenInfo(token):
     billingcheck = input(f"\n                                   {o}[{m}GLOO{o}] {s}| {o}[{m}BILLING{o}] {w}y/n {s}>{w} ")
 
     if billingcheck in yeslist:
-        clpr()
+        clearprint()
         print(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}INFO{o}] {s}>{w} This is a premium feature!")
         sleep(2)
         pass

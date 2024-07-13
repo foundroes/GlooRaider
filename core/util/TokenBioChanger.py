@@ -9,7 +9,7 @@ def biochanger():
         success = 0
         failure = 0
         bio = input(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}BIO{o}] {s}>{w} ")
-        clpr()
+        clearprint()
         if bio == "" or bio == None:
             bio = "https://gloo.lol"
         else:
@@ -29,7 +29,7 @@ def biochanger():
                 "accept-language": "en-GB",
                 "content-length": str(len(dumps(payload))),
                 "content-type": "application/json",
-                "cookie": f"__cfuid={randstr(43)}; __dcfduid={randstr(32)}; locale=en-US",
+                "cookie": f"__cfuid={getting.randstr(43)}; __dcfduid={getting.randstr(32)}; locale=en-US",
                 "origin": "https://discord.com",
                 "sec-fetch-dest": "empty",
                 "sec-fetch-mode": "cors",
@@ -42,7 +42,7 @@ def biochanger():
             response = session.patch(f"https://discord.com/api/v9/users/@me/profile", headers=headers, json=payload)
             
             with lock:
-                time_rn = get_time_rn()
+                time_rn = getting.get_time_rn()
                 if response.status_code in [200, 202]:
                     success +=1
                     print(f"                      {o}[{m}{time_rn}{o}] {lg}[{g}SUCCESS{lg}] {s}| {w}{token[:37]} {o}[{m}{response.status_code}{o}]")
@@ -53,18 +53,18 @@ def biochanger():
         with open("Assets/Input/Tokens.txt", "r", encoding='utf-8') as f:
             tokens = f.read().splitlines()
 
-        num_threads = get_num_threads() 
+        num_threads = getting.get_num_threads() 
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
             executor.map(bio_changer, tokens)
     
-        clpr()
+        clearprint()
 
         print(f'                              {o}[{w}Type {o}"{m}show{o}"{w} for info or press {o}"{m}enter{o}"{w} to go back{o}]\n')
         choose = input(f"                               {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} ")
 
         if choose == "show":
-            clpr()
+            clearprint()
             print(f"""                            {lg}[{g}SUCCESS{lg}] {s}| {o}[{m}{success:03}{o}] {s}>{w} Changed bio of the token.
                             {lr}[{r}FAILURE{lr}] {s}| {o}[{m}{failure:03}{o}] {s}>{w} Failed to change bio of the token.""")
             input(f"\n                            {o}[{m}GLOO{o}] {s}| {o}[{m}INPUT{o}] {s}>{w} Press Enter to go back.")
