@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/foundroes/GlooRaider">
-    <img src="https://media.discordapp.net/attachments/1245112135659421857/1245119499099963504/smaller.png?ex=669393a5&is=66924225&hm=2febe59f29bfaaa1b65bc61416275cb90de6fc60d565e85594a29e00471c4966&=&format=webp&quality=lossless" alt="Logo" width="100" height="100">
+    <img src="https://media.discordapp.net/attachments/1245112135659421857/1245119499099963504/smaller.png?ex=66a608a5&is=66a4b725&hm=d8666c0764d11309b2a74d222bab9a36c9f421c5abafd23feb4af022fa851cf4&=&format=webp&quality=lossless" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Gloo Raider | Open-Source | Free Version</h3>
