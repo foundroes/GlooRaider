@@ -24,7 +24,7 @@ def gloopage():
                 '2': tokenchecker,
                 '3': onliner,
                 '4': leaver,
-                '5': TokenInfo,
+                '5': tokenjoiner,
                 '6': removeduplicates,
                 '7': pronounceChanger,
                 '8': statusrotater,
@@ -43,9 +43,7 @@ def gloopage():
             }
 
             if choice in actions:
-                if choice in ['1', '11', '12', '13']:
-                    actions[choice]()
-                elif os.path.exists(dirchecker):
+                if os.path.exists(dirchecker):
                     if os.path.getsize(dirchecker) == 0:
                         validate.checkfortokens()
                     else:

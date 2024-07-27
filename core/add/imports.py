@@ -8,7 +8,7 @@ from core.util.TokenDupeRemover                  import *
 from core.util.TokenPronChanger                  import *
 from core.util.TokenStatusRotater                import *
 from core.util.TokenBioChanger                   import *
-from core.util.TokenInfo                         import *
+from core.util.TokenJoiner                       import *
 from core.util.AuditSpammer                      import *
 from core.util.SoundSpammer                      import *
 from core.util.ChannelSpammer                    import *

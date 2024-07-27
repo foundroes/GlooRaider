@@ -250,14 +250,14 @@ mainpage = f"""       {o}[{m}01{o}] {s}> {w}Token Formater  {o}[{m}06{o}] {s}> {
        {o}[{m}02{o}] {s}> {w}Token Checker   {o}[{m}07{o}] {s}> {w}Token Pron. Changer   {o}[{m}12{o}] {s}> {w}Webhook Deleter  {o}[{m}17{o}] {s}> {w}Audit Spammer
        {o}[{m}03{o}] {s}> {w}Token Onliner   {o}[{m}08{o}] {s}> {w}Token Custom Status   {o}[{m}13{o}] {s}> {w}Webhook Lookup   {o}[{m}18{o}] {s}> {w}Website
        {o}[{m}04{o}] {s}> {w}Token Leaver    {o}[{m}09{o}] {s}> {w}Token Name Changer    {o}[{m}14{o}] {s}> {w}Channel Spammer  {o}[{m}19{o}] {s}> {w}Discord
-       {o}[{m}05{o}] {s}> {w}Token Info      {o}[{m}10{o}] {s}> {w}Token Bio Changer     {o}[{m}15{o}] {s}> {w}Basic Spammer    {o}[{m}20{o}] {s}> {w}Exit"""
+       {o}[{m}05{o}] {s}> {w}Token Joiner    {o}[{m}10{o}] {s}> {w}Token Bio Changer     {o}[{m}15{o}] {s}> {w}Basic Spammer    {o}[{m}20{o}] {s}> {w}Exit"""
 
 
 title1 =  f'[Gloo Raider]  |  [Token Formater]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
 title2 =  f'[Gloo Raider]  |  [Token Checker]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
 title3 =  f'[Gloo Raider]  |  [Token Onliner]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
 title4 =  f'[Gloo Raider]  |  [Token Guild Leaver]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
-title5 =  f'[Gloo Raider]  |  [Token Info]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
+title5 =  f'[Gloo Raider]  |  [Token Joiner]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
 title6 =  f'[Gloo Raider]  |  [Token Duplicate Remover]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'  
 title7 =  f'[Gloo Raider]  |  [Token Pronouns Changer]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
 title8 =  f'[Gloo Raider]  |  [Token Name Changer]  |  [Tokens: {counttokens}]  |  [Proxies: {countproxies}]  |  [https://gloo.lol]'
