@@ -6,7 +6,7 @@
   <h3 align="center">Gloo Raider | Open-Source | Free Version</h3>
 
   <p align="center">
-    Gloo is a discord multitool with 40 Paid/Free options.
+    Gloo is a discord multitool with 20 free options.
     <br/>
     <br/>
     <a href="https://discord.gg/uJE9rfJ7Tz">Discord</a>
