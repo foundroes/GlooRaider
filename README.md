@@ -23,5 +23,5 @@
 </p>
 <p align="center">
   <a href="https://github.com/foundroes/GlooRaider">
-    <img src="https://i.postimg.cc/L8P7qXqY/smaller.png" alt="Logo" width="879" height="353">
+    <img src="https://i.postimg.cc/2809sb1h/image-2024-08-31-140657086.png" alt="Logo" width="879" height="353">
   </a>
