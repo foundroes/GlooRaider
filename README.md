@@ -3,10 +3,10 @@
     <img src="https://i.postimg.cc/L8P7qXqY/smaller.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">Gloo Raider | Open-Source | Free Version</h3>
+  <h3 align="center">🔮 Gloo Raider  |  Open-Source  |  Free Version 🔮</h3>
 
   <p align="center">
-    🔮 Gloo is a discord multitool with 20 free options. 🔮
+    Gloo is a discord multitool with 20 free options.
     <br/>
     <br/>
     <a href="https://discord.gg/uJE9rfJ7Tz">Discord</a>
@@ -15,8 +15,10 @@
   </p>
 </p>
 
+
+
   <p align="center">
-    ✨ You can check out premium version in our discord server. ✨
+     You can check out premium version in our discord server. 
     <br/>
     🌟 Star the repo for rewards and more updates, send us in the server. 🌟
     <br/>
