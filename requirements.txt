@@ -1,3 +1,4 @@
+distutils
 pytz
 pypresence
 httpx
