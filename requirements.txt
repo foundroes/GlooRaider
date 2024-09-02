@@ -10,4 +10,5 @@ tls-client
 pystyle
 colorama
 beautifulsoup4  
+psutil
 selenium
