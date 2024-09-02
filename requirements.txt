@@ -4,6 +4,7 @@ pypresence
 httpx
 discord
 easygui
+pip install twocaptcha-python
 pywin32
 requests
 keyboard
