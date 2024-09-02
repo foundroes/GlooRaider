@@ -1,9 +1,10 @@
-setuptools
+distutils
 pytz
 pypresence
 httpx
 discord
 easygui
+pywin32
 requests
 keyboard
 websocket-client  
