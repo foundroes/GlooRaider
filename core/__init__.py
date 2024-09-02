@@ -36,9 +36,6 @@ import tls_client
 import configparser
 import concurrent.futures
 
-session = tls_client.Session(
-    client_identifier="chrome_116",
-)
 
 from .util.Plugins          import *
 from .util.Headers          import *
