@@ -1,4 +1,4 @@
-distutils
+setuptools
 pytz
 pypresence
 httpx
