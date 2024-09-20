@@ -1,10 +1,10 @@
-distutils
+setuptools
 pytz
 pypresence
 httpx
 discord
 easygui
-twocaptcha-python
+twocaptcha
 pywin32
 requests
 keyboard
