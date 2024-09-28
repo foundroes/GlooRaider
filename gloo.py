@@ -8,6 +8,8 @@ from core.util import *
 System.Size(110, 20)
 BackgroundRPC()
 
+webbrowser.open('https://discord.gg/pqaYpfXDHj')
+
 class UI:
     def page1():
         while True:
