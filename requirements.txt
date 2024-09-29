@@ -8,6 +8,7 @@ twocaptcha
 pywin32
 requests
 keyboard
+urllib3
 websocket-client  
 tls-client  
 pystyle
