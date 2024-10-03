@@ -21,9 +21,7 @@ def PronChanger():
 
         sesheaders = headers.copy()
         sesheaders.update({"Authorization": token})
-        session = tls_client.Session(
-            client_identifier="chrome_116",
-        )
+        session = Client.get_session()
 
         response = session.patch(f"https://discord.com/api/v9/users/@me/profile", headers=sesheaders, json=payload)
         time_rn = getting.get_time_rn()

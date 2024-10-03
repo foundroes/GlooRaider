@@ -442,8 +442,7 @@ toolprint = f"""
 {cs[5]}                                   /____/                          
 """
 
-page1menu = f"""
-     {o}[{m}01{o}]{m} {s}> {w}Token Formatter {o}[{m}06{o}]{m} {s}> {w}Token Pron. Changer  {o}[{m}11{o}]{m} {s}> {w}Token Dupe Remover   {o}[{m}16{o}]{m} {s}> {w}Token Nuker
+page1menu = f"""     {o}[{m}01{o}]{m} {s}> {w}Token Formatter {o}[{m}06{o}]{m} {s}> {w}Token Pron. Changer  {o}[{m}11{o}]{m} {s}> {w}Token Dupe Remover   {o}[{m}16{o}]{m} {s}> {w}Token Nuker
      {o}[{m}02{o}]{m} {s}> {w}Token Disabler  {o}[{m}07{o}]{m} {s}> {w}Token Guild Joiner   {o}[{m}12{o}]{m} {s}> {w}Friend Req Spammer   {o}[{m}17{o}]{m} {s}> {w}Token Login
      {o}[{m}03{o}]{m} {s}> {w}Token Checker   {o}[{m}08{o}]{m} {s}> {w}Token Guild Leaver   {o}[{m}13{o}]{m} {s}> {w}Channel Spammer      {o}[{m}18{o}]{m} {s}> {w}Token Info
      {o}[{m}04{o}]{m} {s}> {w}Token Onliner   {o}[{m}09{o}]{m} {s}> {w}Token Name Changer   {o}[{m}14{o}]{m} {s}> {w}Group Spammer        {o}[{m}19{o}]{m} {s}> {w}Guild Info

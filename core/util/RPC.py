@@ -3,7 +3,7 @@ from pypresence import Presence
 import threading
 import time
 
-CLIENT_ID = '1279357177471045632'
+CLIENT_ID = '1290520544923357194'
 RPC = Presence(CLIENT_ID)
 
 def RPCstart():

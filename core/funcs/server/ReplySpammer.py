@@ -37,7 +37,8 @@ def ReplySpammer():
 
             sesheaders = headers.copy()
             sesheaders.update({"Authorization": token})
-
+            session = Client.get_session()
+            
             response = session.post(f"https://discord.com/api/v9/channels/{channel_id}/messages", headers=sesheaders, json=payload)
             with output_lock:
                 time_rn = getting.get_time_rn()
