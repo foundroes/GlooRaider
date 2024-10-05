@@ -9,3 +9,5 @@ beautifulsoup4
 requests
 selenium
 bs4
+websocket-client
+
