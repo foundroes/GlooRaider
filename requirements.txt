@@ -2,7 +2,6 @@ easygui
 keyboard
 websocket-client
 setuptools
-concurrent.futures
 dataclasses
 pystyle
 colorama
