@@ -10,4 +10,4 @@ requests
 selenium
 bs4
 websocket-client
-
+psutil
