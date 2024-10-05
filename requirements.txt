@@ -8,6 +8,8 @@ colorama
 beautifulsoup4
 requests
 selenium
+discord
 bs4
+tls_client
 websocket-client
 psutil
