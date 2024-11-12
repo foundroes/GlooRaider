@@ -3,9 +3,10 @@
     <img src="https://i.postimg.cc/L8P7qXqY/smaller.png" alt="Logo" width="100" height="100">
   </a>
 
+  <h2 align="center">Currently Updating, join discord.gg/gloo</h2>
   <h3 align="center">🔮 Gloo Raider  |  Open-Source  |  Free Version 🔮</h3>
 
-  <p align="center">
+  <p align="center">'
     Gloo is a discord multitool with 20 free options.
     <br/>
     <br/>
