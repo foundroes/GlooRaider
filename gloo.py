@@ -7,7 +7,7 @@ from core.util import *
 
 System.Size(110, 20)
 
-webbrowser.open('https://discord.gg/pqaYpfXDHj')
+webbrowser.open('https://discord.gg/er5zvhfGCQ')
 class UI:
     def page1():
         while True:
